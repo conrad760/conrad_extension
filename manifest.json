@@ -1,0 +1,21 @@
+{
+    "manifest_version": 2,
+    "name": "conrad-extension",
+    "description": "Keep up with Conrad all over the internet!",
+    "version": "1.0",
+    "icons": {
+        "48": "icons/icon_48.png",
+        "96": "icons/icon_96.png"
+    },
+    "browser_action": {
+        "default_icon": "/icons/icon_96.png",
+        "default_popup": "popup.html"
+    },
+    "permissions": [" tabs "],
+    "content_scripts": [
+        {
+            "matches": ["*://conrad760.github.io/*"],
+            "js": ["best_website_ever.js"]
+        }
+    ]
+}
